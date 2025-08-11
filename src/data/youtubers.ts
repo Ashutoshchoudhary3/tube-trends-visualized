@@ -1,3 +1,5 @@
+import { additionalYoutuberData } from "./additional-youtubers";
+
 export interface YouTuberData {
   id: string;
   name: string;
@@ -352,6 +354,9 @@ export const youtuberData: YouTuberData[] = [
     ]
   }
 ];
+
+// Combine all YouTuber data
+export const allYoutuberData = [...youtuberData, ...additionalYoutuberData];
 
 export function formatNumber(num: number): string {
   if (num >= 1000000000) {

@@ -1,7 +1,7 @@
 import { HeroStats } from "@/components/HeroStats";
 import { YouTuberCard } from "@/components/YouTuberCard";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { youtuberData } from "@/data/youtubers";
+import { allYoutuberData } from "@/data/youtubers";
 
 const Index = () => {
   return (
@@ -21,7 +21,7 @@ const Index = () => {
         </div>
 
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
-          {youtuberData.map((creator, index) => (
+          {allYoutuberData.map((creator, index) => (
             <div 
               key={creator.id} 
               className="animate-fade-in"
