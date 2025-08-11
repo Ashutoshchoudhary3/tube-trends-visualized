@@ -1,10 +1,12 @@
 import { HeroStats } from "@/components/HeroStats";
 import { YouTuberCard } from "@/components/YouTuberCard";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { youtuberData } from "@/data/youtubers";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ThemeToggle />
       <HeroStats />
       
       <main className="container mx-auto px-4 py-12">
